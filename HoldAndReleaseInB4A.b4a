@@ -1,0 +1,83 @@
+﻿Build1=Default,b4a.example
+File1=Layout.bal
+FileGroup1=Default Group
+Group=Default Group
+Library1=core
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~
+NumberOfFiles=1
+NumberOfLibraries=1
+NumberOfModules=0
+Version=12.5
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Hold and Release
+	#VersionCode: 1
+	#VersionName: 1
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+    #FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+Sub Process_Globals
+
+	Dim T As Timer
+
+End Sub
+
+Sub Globals
+	
+	Dim Test As Int=0
+	
+	Private Label1 As Label
+	
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	
+	Activity.LoadLayout("Layout")
+	
+	T.Initialize("Hold",1)
+	
+	T.Enabled=False
+	
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+
+Private Sub Panel1_Touch (Action As Int, X As Float, Y As Float)
+	
+	If Action=Activity.ACTION_DOWN And T.Enabled=False Then
+		
+		T.Enabled=True
+		
+	else if  Action=Activity.ACTION_UP Then
+		
+		T.Enabled=False
+		
+		Release
+		
+	End If
+	
+End Sub
+
+Sub Hold_Tick
+	
+	Test=Test+1
+	Label1.Text=Test
+	
+End Sub
+
+Sub Release
+	
+	Test=0
+	Label1.Text=Test
+	
+End Sub

@@ -1,0 +1,18 @@
+--release
+--output
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects
+--lib
+F:\Nick's PC\Nick\Tools\SDK_X(cafetoseeh.ir)\platforms\android-30\android.jar
+F:\Nick's PC\Nick\Tools\SDK_X(cafetoseeh.ir)\tools\..\extras\b4a_local\unpacked-b4ashared-63822354962000\dex_v1\b4ashared.zip
+F:\Nick's PC\Nick\Tools\SDK_X(cafetoseeh.ir)\tools\..\extras\b4a_local\unpacked-debug-63822354962000\dex_v1\debug.zip
+F:\Nick's PC\Nick\Tools\SDK_X(cafetoseeh.ir)\tools\..\extras\b4a_local\unpacked-core-63822354962000\dex_v1\core.zip
+F:\Nick's PC\Nick\Tools\SDK_X(cafetoseeh.ir)\tools\..\extras\b4a_local\unpacked-remotelogger-63822354962000\dex_v1\remotelogger.zip
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\main$1.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\main$B4AMenuItemsClickListener.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\main$HandleKeyDelayed.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\main$ResumeMessage.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\main$WaitForLayout.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\main.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\R$drawable.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\R$style.dex
+F:\Nick's PC\Nick\Github\HoldAndReleaseInB4A\Objects\dexed\b4a\example\R.dex
